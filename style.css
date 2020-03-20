@@ -1,0 +1,99 @@
+body,
+html {
+  font-family: 'Montserrat', sans-serif;
+  margin:0px;
+  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+} 
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: all 0.3s linear;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
+
+.card {
+  width:450px;
+  height: 300px;
+  margin:10px;
+  font-size: 3em;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: all 0.3s linear;
+
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  transform:scale(1.05);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  }
+a.link
+{
+  text-decoration: none;
+  transition: all 0.3s linear;
+  color:black;
+}
+a.link:hover {
+    color: red;
+    transform:scale(1.1);
+}
+
+@media only screen and (max-width:600px){
+  .topnav a{
+    font-size: 12px;
+    padding: 5px 5px;
+  }
+  .topnav-right 
+  {
+    float: none;
+  }
+  .card
+  {
+      width:300px;
+      height: 200px;
+      margin:10px;
+      font-size: 2em;
+      text-align: center;
+
+  }
+}
