@@ -4,7 +4,27 @@ html {
   margin:0px;
   background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
 } 
-
+.logo
+{
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: auto 110px;
+  background-image: url(logo.png);
+  background-repeat: no-repeat;
+  transition: all 0.3s linear;
+}
+.logo:hover
+{
+  transform:scale(0.9);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.logoback
+{
+    background: linear-gradient(to right, #feb01b, #afff14, #ffd5e0, #14ff65, #ffdaa6, #64ff47, #d8d2a9, #cfcfcf);
+}
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: #333;
